@@ -477,11 +477,7 @@ function Cart() {
               role === "Manager" && (
                 <div className="select-all-container">
                   <label className="checkbox-label">
-                    <input
-                      type="checkbox"
-                      checked={selectedItems.size === filterCart.length}
-                      onChange={handleSelectAll}
-                    />
+                    <input type="checkbox" checked={selectedItems.size === filterCart.length} onChange={handleSelectAll}/>
                     <span>Select All Items</span>
                   </label>
                 </div>
@@ -493,11 +489,7 @@ function Cart() {
                 {
                     role === "Manager" && (
                       <div className="item-checkbox">
-                        <input
-                          type="checkbox"
-                          checked={selectedItems.has(item._id)}
-                          onChange={() => handleItemSelect(item._id)}
-                        />
+                        <input type="checkbox" checked={selectedItems.has(item._id)} onChange={() => handleItemSelect(item._id)}/>
                       </div>
                     )
                 }
@@ -590,7 +582,7 @@ function Cart() {
             </div>
             <div className="p-3">
               <h4>Are You Sure to Place Order</h4>
-              <button className="btn btn-success me-3" onClick={placeorder}> Yes Place Order </button>
+              <button className="btn btn-success me-3" onClick={placeorder}>Yes Place Order</button>
               <Link to="" className="btn btn-blue">Cancel</Link>
             </div>
             <div className="modal-footer">

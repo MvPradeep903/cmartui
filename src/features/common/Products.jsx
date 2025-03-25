@@ -8,12 +8,12 @@ function Products() {
   return (
     <div className='p-4'>
       <h3 className='text-center'>PRODUCTS</h3>
-      <div className='d-flex flex-wrap h'>
+      <div className='d-flex flex-wrap '>
         {
             !isLoading && products?.map((p)=>{
                 return (
                     <div className='p-4'>
-                        <div className="card mt-1 p-2 shadow" style={{width: "19rem",height:'450px'}}>
+                        <div className="card mt-1 p-2 shadow" style={{width: "20rem",height:'450px'}}>
                             <Link to={`/productdetails/${p._id}`}>
                                 <img src={p.imgUrl} className="card-img-top" style={{height:"320px"}}/>
                             </Link>

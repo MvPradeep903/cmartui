@@ -27,11 +27,26 @@ function Login() {
         window.localStorage.setItem("username",res.data.username)
         dispatch(setUser(res.data))
         toast.success('Login Success',{
-          position : 'top-left'
+          position : 'top-left',
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
         })
         navigate('/dashboard');
         }else{
           setErrmsg(res.data.msg);
+          toast.error(res.data.msg,{
+            position : 'top-left',
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+          })
         }
     })
   }

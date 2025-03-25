@@ -14,10 +14,10 @@ function AgentDashboard() {
     setSelectedOrder(order);
   };
   return (
-    <div className='p-2'>
+    <div className='px-2'>
       <h3 className='text-center'>AGENT DASHBOARD</h3>
-      <div className='px-5 text-center'>
-        <table className='table border border-2 me-2 shadow-sm mt-4'>
+      <div className='table-responsive'>
+        <table className='table shadow-sm mt-3'>
             <thead className='table-light'>
                 <tr>
                     <th>Username</th>
